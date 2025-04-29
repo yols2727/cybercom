@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cybercom - Servicio Técnico de Computadoras</title>
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+    }
+    .hero-section {
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+      padding: 100px 0;
+    }
+    .section-title {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #0d6efd;
+    }
+    .card-custom {
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card-custom:hover {
+      transform: translateY(-10px);
+    }
+    .wave {
+      position: relative;
+      width: 100%;
+      height: 100px;
+      overflow: hidden;
+    }
+    .wave svg {
+      position: absolute;
+      bottom: 0;
+    }
+    footer {
+      background: #0d6efd;
+      color: white;
+    }
+    .lead {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="#">Cybercom</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-3 fw-bold">Bienvenido a Cybercom</h1>
+      <p class="lead mt-3">Servicio técnico profesional para tus computadoras y laptops</p>
+      <a href="servicios.html" class="btn btn-light btn-lg mt-4 shadow">Conoce nuestros servicios</a>
+    </div>
+  </section>
+
+  <!-- Wave Separator -->
+  <div class="wave">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+      <path d="M-0.27,45.42 C149.99,150.00 349.82,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #f8f9fa;"></path>
+    </svg>
+  </div>
+
+  <!-- Sobre Nosotros -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-title">¿Quiénes Somos?</h2>
+      <p class="lead">En Cybercom te ofrecemos diagnóstico, reparación, mantenimiento y optimización de computadoras. Contamos con técnicos certificados listos para ayudarte.</p>
+    </div>
+  </section>
+
+  <!-- Por qué Elegirnos -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">¿Por qué elegirnos?</h2>
+      <div class="row g-4 mt-4">
+        <div class="col-md-4">
+          <div class="card card-custom text-center p-4">
+            <h4 class="fw-bold">Experiencia</h4>
+            <p>Más de 10 años solucionando problemas de hardware y software.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom text-center p-4">
+            <h4 class="fw-bold">Rapidez</h4>
+            <p>Entregas en tiempo récord y atención prioritaria a emergencias.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom text-center p-4">
+            <h4 class="fw-bold">Garantía</h4>
+            <p>Todos nuestros servicios incluyen garantía escrita.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nuestro Trabajo (Carrusel) -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-title">Nuestro Trabajo</h2>
+      <p class="lead">Así trabajamos para que tu equipo quede como nuevo.</p>
+
+      <div id="trabajoCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow">
+
+          <div class="carousel-item active">
+            <img src="imagen 1.jpg" class="d-block w-100" alt="Trabajo 1">
+          </div>
+
+          <div class="carousel-item">
+            <img src="imagen 4.jpg" class="d-block w-100" alt="Trabajo 2">
+          </div>
+
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#trabajoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#trabajoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+        <!-- Indicadores -->
+        <div class="carousel-indicators mt-3">
+          <button type="button" data-bs-target="#trabajoCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#trabajoCarousel" data-bs-slide-to="1"></button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Ubicación -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">¿Dónde estamos?</h2>
+      <p class="lead">Visítanos en el Centro Comercial El Carmen 116-A</p>
+      <div class="mt-4">
+        <iframe 
+          src="https://www.google.com/maps?q=Centro+Comercial+El+Carmen+116-A&output=embed" 
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <div class="container">
+      <p class="mb-0">© 2025 Cybercom. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
